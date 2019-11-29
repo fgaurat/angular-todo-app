@@ -1,0 +1,16 @@
+<h2>Todo Template Form</h2>
+
+<form>
+  <mat-form-field>
+    <input matInput placeholder="Todo title">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+  <br>
+  <button mat-flat-button color="primary">Submit</button>
+
+</form>
